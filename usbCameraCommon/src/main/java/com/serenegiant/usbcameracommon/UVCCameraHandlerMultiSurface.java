@@ -169,10 +169,12 @@ public class UVCCameraHandlerMultiSurface extends AbstractUVCCameraHandler {
 			@Override
 			public void run() {
 				synchronized (UVCCameraHandlerMultiSurface.this) {
-					if (mRendererHolder != null) {
-						mRendererHolder.captureStill(path);
-						updateMedia(path);
-					}
+					try {
+						if (mRendererHolder != null) {
+							mRendererHolder.captureStill(path);
+							updateMedia(path);
+						}
+					} catch (Exception ex) {}
 				}
 			}
 		});

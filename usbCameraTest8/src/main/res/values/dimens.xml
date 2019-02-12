@@ -33,4 +33,5 @@
 	<dimen name="horizontal_margin2">16dp</dimen>
 	<dimen name="vertical_margin2">16dp</dimen>
 	<dimen name="sz_icon_camera_ctrl">44dp</dimen>
+	<dimen name="list_font_size">14sp</dimen>
 </resources>
